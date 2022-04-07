@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 1000px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.logo {
+  margin-top: 30px;
+}
+
+.menu {
+  margin-top: 30px;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.menu li {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.menu li:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* main */
+
+.container {
+  max-width: 1000px;
+  display: grid;
+  gap: 130px;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.texto {
+  align-self: end;
+  grid-template-columns: 1fr;
+}
+
+.texto h2 {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 40px;
+}
+
+.texto span {
+  font-weight: bold;
+  color: #89c5cc;
+}
+
+.texto p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+}
+
+.texto p > span {
+  color: #7d7987;
+  font-weight: bold;
+}
+
+.bg img {
+  grid-template-columns: 1fr;
+  max-width: 100%;
+}
+
+.botao {
+  display: inline-block;
+}
+
+.botao a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  width: 182px;
+  height: 56px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  background-color: #69b99d;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5ea78d;
+}
+
+.btn span {
+  color: white;
+  padding: 20px 25px 15px 10px;
+}
+
+.btn img {
+  padding: 15px 10px 10px 20px;
+}
+
+.social {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.social a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social a:hover {
+  border-bottom: 3px solid black;
+}
+
+.social p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#balls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .bg {
+    text-align: center;
+  }
+
+  .social {
+    margin-top: 40px;
+  }
+
+  #balls {
+    display: none;
+  }
+}
